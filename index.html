@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seminarski</title>
+        <meta charset="utf-8">
+        <link href="seminarski.css" rel="stylesheet">
+        <link href="ikonica1.png" rel="shortcut icon">
+        <link href="aos-master/dist/aos.css" rel="stylesheet"></link>
+        
+    </head>
+    <body>
+    <div>
+        <nav>
+            <a href="#background">Home</a>
+            <a href="">About me</a>
+            <a href="#page5">Work</a>
+            <a href="">Contact</a>
+        </nav>
+         <div id="background" >
+            
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <h1 data-aos="zoom-in">ALEKSA ROBAVS</h1>
+            <div data-aos="zoom-in" id="menu-btn-open" onclick="openMenu()">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <div id="menu-btn-close" onclick="openMenu()">
+                
+                
+            </div>
+            
+            <div id="toggle-menu">
+               <a href="#page1"><div class="page1">1</div></a>
+               <a href="#page2"><div class="page2">2</div></a>
+               <a href="#page3"><div class="page3">3</div></a>
+               <a href="#page4"><div class="page4">4</div></a>
+               <a href="#page5"><div class="page5">5</div></a>
+            </div>
+         </div>
+
+         <div id="page1">
+             <div class="sub-page">
+                 <h2 data-aos="zoom-in" class="naslov">UVOD</h2>
+                 <div  class="section">
+                     
+                   <div data-aos="fade-right" class="text">
+                   <ul>
+                      <li>
+                         Zemlja je peta planeta po veličini u Sunčevom sistemu. Za razliku od nekih drugih planeta, Zemlja nije gasoviti džin, kakva je na primer planeta Jupiter, već je terestrička planeta, odnosno planeta koja ima čvrstu površinu. Termin terestrički potiče od grčke reči terra što znači zemlja.
+                    </li>
+
+                    <li>
+                        U sunčevom sistemu ako Zemlju uporedimo sa ostale tri terestričke planete, Merkurom, Venerom i Marsom, ona je najveća, sa najvećom gustinom, najvećom silom gravitacije i najjačim magnetskim poljem. Generalno, Zemlja se sastoji od atmosfere, biosfere, hidrosfere i njene unutrašnje građe ispod površine
+                    </li>
+                    </ul>
+                   </div>
+
+                   <div  class="inputs">
+                     
+                       <input class="input1" onchange="changeText()" name="1" value="1" type="radio" id="part1" checked>
+                       <label for="part1"></label>
+
+                       <input class="input2" onchange="changeText()" name="1" value="2" type="radio" id="part2">
+                       <label for="part2"></label>
+
+                       <input class="input3" onchange="changeText()" name="1" value="3" type="radio" id="part3">
+                       <label for="part3"></label>
+                    
+                    </div>
+                </div>
+                <div  class="popup-window">
+                 
+
+                 <button  type="button" class="prevBtn">Prev</button>
+
+                 <button  type="button" class="nextBtn">Next</button>
+
+                 <button type="button" class="closeButton">X</button>
+                </div>
+                <div data-aos="fade-left" class="gallery">
+                    <div onclick="openImages('1')"><img src="slika1.jpg" alt="slika1"></div>
+                    <div onclick="openImages('2')"><img src="slika2.jpg" alt="slika2"></div>
+                    <div onclick="openImages('3')"><img src="slika3.jpg" alt="slika3"></div>
+                    <div onclick="openImages('4')"><img src="slika4.jpg" alt="slika4"></div>
+                </div>
+             </div>
+         </div>
+
+         <div id="page2">
+           <div class="sub-page">
+               <h2 data-aos="fade-right">Zemljine sfere</h2>
+               <h3 data-aos="fade-right" class="podnaslov1">Spoljašnje sfere</h3>
+              <div data-aos="zoom-in" class="container">
+                  
+                <div class="child">
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/sr-ec/%D0%A5%D0%B8%D0%B4%D1%80%D0%BE%D1%81%D1%84%D0%B5%D1%80%D0%B0" target="_blank"><img src="hidrosfera.jpg" alt="hidrosfera"></a>
+                </div>
+                <div class="child">
+                    
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/sr/Zemljina_atmosfera" target="_blank"><img src="atmosfera.jpg" alt="atmosfera"></a>
+                </div>
+                <div class="child">
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/sr-ec/%D0%91%D0%B8%D0%BE%D1%81%D1%84%D0%B5%D1%80%D0%B0" target="_blank"><img src="biosfera.jpg" alt="biosfera"></a>
+                </div>
+              </div>
+              <h3 data-aos="fade-right" class="podnaslov2">Unutršanje sfere</h3>
+              <div data-aos="zoom-in" class="container1">
+                <div class="child1">
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D1%99%D0%B8%D0%BD%D0%B0_%D0%BA%D0%BE%D1%80%D0%B0" target="_blank"><img src="zemljina-kora.jpg" alt="zemljina kora"></a>
+                </div>
+                <div class="child1">
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/sr-ec/%D0%97%D0%B5%D0%BC%D1%99%D0%B8%D0%BD%D0%BE_%D1%98%D0%B5%D0%B7%D0%B3%D1%80%D0%BE" target="_blank"><img src="zemljino-jezgro.jpg" alt="zemljino jezgro"></a>
+                </div>
+                <div class="child1">
+                    <a title="Odvedi me na sajt!" href="https://sr.wikipedia.org/sr-ec/%D0%9B%D0%B8%D1%82%D0%BE%D1%81%D1%84%D0%B5%D1%80%D0%B0" target="_blank"><img src="litosfera.jpg" alt="litosfera"></a>
+                </div>
+              </div>
+            
+           </div>
+         </div>
+         <div id="page3">
+             <div class="sub-page">
+                 <div data-aos="zoom-in" style="width:auto;height:auto;position:absolute;right:145px;top:10px;color:red;font-family: Arial, Helvetica, sans-serif;">
+                     desni klik= ime <br>
+                     levi klik= saznaj više
+                  </div>
+             <h2 data-aos="zoom-in"  style="font-size:35px">Kontinenti i okeani</h2>
+             <img data-aos="zoom-in" style="border:1px solid blue;border-radius:10px;margin-left:2vw" src="mapa.jpg" alt="mapa" usemap="#mapa">
+             </div>
+             <map name="mapa">
+                 <area shape="poly" coords="157,323,227,278,359,366,254,554" onmousedown="ime('1',event)">
+
+                 <area shape="poly" coords="143,330,462,52,77,54,3,137" onmousedown="ime('2',event)">
+
+                 <area shape="poly" coords="629,446,635,303,606,296,567,221,439,208,398,283,527,476" onmousedown="ime('3',event)">
+
+                 <area shape="poly" coords="615,96,584,173,529,205,425,203,410,100,509,45" onmousedown="ime('4',event)">
+
+                 <area shape="poly" coords="621,95,686,63,996,80,835,295,737,320,635,299,596,220,546,194,588,172" onmousedown="ime('5',event)">
+
+                 <area shape="poly" coords="756,349,874,268,1034,391,1026,505,886,551" onmousedown="ime('6',event)">
+
+                 <area shape="poly" coords="346,558,398,510,606,506,708,560" onmousedown="ime('7',event)">
+
+                 <area shape="poly" coords="1035,66,1020,88,945,145,902,318,1035,368" onmousedown="ime('8',event)">
+
+                 <area shape="poly" coords="1,176,171,338,234,561,1,560" onmousedown="ime('9',event)">
+                
+                 <area shape="poly" coords="818,495,698,473,625,359,676,287,717,319,754,321,753,282,813,385" onmousedown="ime('10',event)">
+
+                 <area shape="poly" coords="387,471,423,509,605,513" onmousedown="ime('11',event)">
+
+                 <area shape="poly" coords="404,8,441,42,766,55,1035,43" onmousedown="ime('12',event)">
+
+                 <area shape="poly" coords="225,233,400,108,433,195,388,301,454,345,472,341,516,466,381,465,313,504,363,337" onmousedown="ime('13',event)">
+                 
+
+             </map>
+         </div>
+
+         <div id="page4">
+            <div class="sub-page">
+             <h2 data-aos="flip-down" style="color:white;font-size:50px;padding-top:25px;text-align:center">Ostale planete u Sunčevom sistemu</h2>
+
+             
+                 <input data-aos="flip-down" onkeyup="search()" name="search" id="search" type="text" placeholder="Search...">
+                 <ul data-aos="flip-down" class="search-list">
+                    <li  onclick="openPicture('1')" class="list-item merkur"><a>Merkur</a></li>
+
+                    <li onclick="openPicture('2')" class="list-item venera"><a>Venera</a></li>
+
+                    <li onclick="openPicture('3')" class="list-item zemlja"><a>Zemlja</a></li>
+
+                    <li onclick="openPicture('4')" class="list-item mars"><a>Mars</a></li>
+
+                    <li onclick="openPicture('5')" class="list-item jupiter"><a >Jupiter</a></li>
+
+                    <li onclick="openPicture('6')" class="list-item saturn"><a>Saturn</a></li>
+
+                    <li onclick="openPicture('7')" class="list-item neptun"><a>Neptun</a></li>
+
+                    <li onclick="openPicture('8')" class="list-item uran"> <a>Uran</a></li>
+                 </ul>
+                <div id="pictureBox" style="width:700px;height:450px;position:absolute;top:150px;right:150px"></div>
+             
+            </div>
+
+        </div>
+
+        <div id="page5">
+            <div class="sub-page">
+               
+               <div data-aos="zoom-in" class="pre-quiz">
+                <h2 style="color:white;font-family:Arial, Helvetica, sans-serif;font-size:50px;padding-top:10px">Ovo je kviz</h2>
+               <button 
+                type="button" class="time">With time</button>
+               <button 
+                type="button" class="no-time">Without time</button>
+
+               
+               <button type="button" class="start">Start</button>
+               </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:3000
+        });
+      </script>
+    <script src="seminarski.js">
+      
+    </script>
+    </body>
+    
+</html>
